@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Tarot Reading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <header>
+            <h1 class="title">Mystic Tarot</h1>
+            <div class="psychic">
+                <div class="psychic-avatar">🔮</div>
+                <div class="psychic-name">Madame Luna</div>
+                <div class="psychic-speech" id="psychicSpeech">Welcome, seeker. Ask the cards your question...</div>
+            </div>
+        </header>
+
+        <main>
+            <div class="question-section">
+                <input type="text" id="questionInput" placeholder="What question weighs on your heart?" maxlength="100">
+                <div class="card-count">
+                    <label>Number of cards:</label>
+                    <select id="cardCount">
+                        <option value="1">1 Card</option>
+                        <option value="2">2 Cards</option>
+                        <option value="3" selected>3 Cards</option>
+                    </select>
+                </div>
+                <button id="drawCards" class="draw-btn">Ask the Cards</button>
+            </div>
+
+            <div class="reading-area" id="readingArea">
+                <div class="cards-container" id="cardsContainer"></div>
+                <div class="interpretation" id="interpretation"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="tarot-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
